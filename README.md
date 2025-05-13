@@ -28,7 +28,8 @@ belle数据集需要通过process_Belle.py处理。
 
 参与训练的样本格式均为：{"input": "<提问>", "target": "<回答>", "task": "<任务类别>"}
 ## 关于训练模型
-请输入：torchrun --nproc_per_node=4 --nnodes=1 --node_rank=0 model.py
+包含混合精度训练与普通训练，集中训练和torchrun分布式训练。
+如使用分布式训练，请输入：torchrun --nproc_per_node=4 --nnodes=1 --node_rank=0 model.py
 参数请根据实际调整
 
-##*******目前正在逐步优化，持续更新中********
+##****目前正在逐步优化，持续更新中********
